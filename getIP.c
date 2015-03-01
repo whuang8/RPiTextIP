@@ -17,7 +17,7 @@ void writeToFile(char* address) {
 /* Inserts command on command line and reads in output. The funtion parses
 the output and returns an IP address string*/
 char* readOutput() {
-  	char* word = malloc(1035 * sizeof(char));
+  	char* word = malloc(100 * sizeof(char));
 	char* address = malloc(39 * sizeof(char));
 	int wlan0Reached = 0;
 	FILE* f;	
@@ -52,7 +52,7 @@ char* format(char* address) {
 }
 
 int main(int argc, char** argv){
-	char* address = malloc(1024 * sizeof(char));
+	char* address = malloc(100 * sizeof(char));
 	address = format(readOutput());
 	writeToFile(address);
   	return 0;
