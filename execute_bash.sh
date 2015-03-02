@@ -5,3 +5,4 @@ chmod 777 execute_bash.sh	//Gives script root rights
 
 sudo /home/pi/textIP/./getIP
 sudo python /home/pi/textIP/script.py
+sudo rm address.txt 
