@@ -5,23 +5,23 @@ Sends the IP address of your Raspberry Pi through text message. This makes conne
 Setup
 =========
 In terminal:
-'''
+```
 sudo nano /etc/inittab
-'''
+```
 
 Scroll down to 
-'''
+```
 1:2345:respawn:/sbin/getty 115200 tty1
-'''
+```
 
 and change to
-'''
+```
 #1:2345:respawn:/sbin/getty 115200 tty1
-'''
+```
 
 under that line type
-'''
+```
 1:2345:respawn:/bin/login -f pi tty1 </dev/tty1 >/dev/tty1 2>&1
-'''
+```
 
 Control-o to save and Control-x to exit nano
