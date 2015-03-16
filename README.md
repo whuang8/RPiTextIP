@@ -4,7 +4,7 @@ Sends the IP address of your Raspberry Pi through text message. This makes conne
 
 Setup
 =========
-In terminal:
+In terminal: from path home/pi/
 ```
 sudo nano /etc/inittab
 ```
@@ -25,3 +25,13 @@ under that line type
 ```
 
 Control-o to save and Control-x to exit nano
+
+In terminal, type in
+```
+sudo nano .bashrc
+```
+
+Scroll down to end of file and type 
+```
+/home/pi/RPiTextIP/./execute_bash.sh
+```
